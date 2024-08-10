@@ -53,4 +53,4 @@ El **agente de Firezone** se instala en una **subnet privada** para proporcionar
 
 ## Diagrama de Arquitectura
 
-![Descripción de la imagen](doc/images/image3.png)
+![Descripción de la imagen](../doc/images/image3.png)
