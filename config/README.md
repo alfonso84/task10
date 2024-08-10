@@ -28,6 +28,6 @@ Configura la conexión de la aplicación siguiendo las instrucciones en la secci
   
 - **API de Firezone:** La versión de Firezone Cloud actualmente tiene su API en fase de beta cerrada (closed beta). Por lo tanto, el paso de configuración es manual por el momento.
 
-- **Automatización:** La creación de usuarios, roles y políticas estará automatizada mediante scripts, los cuales puedes encontrar en la sección [Scripts](SCRIPTS.md).
+- **Automatización:** La creación de usuarios, roles y políticas estará automatizada mediante scripts, los cuales puedes encontrar en la sección [Scripts].
 
 Asegúrate de seguir cada paso y revisar la documentación correspondiente para una implementación exitosa.
