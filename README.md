@@ -90,3 +90,15 @@ La etapa de **Fuente** inyecta una fuente OAuth o SAML en la ejecución del fluj
 Es muy importante que los flujos de autenticación y registro de la fuente configurada (cuando están establecidos; pueden dejarse sin seleccionar para evitar la autenticación o el registro con la fuente) **no tengan una etapa de Inicio de Sesión del Usuario asociada**.
 
 Esto se debe a que la etapa de Fuente funciona añadiendo una etapa dinámica en memoria al flujo de la fuente. Por lo tanto, tener una etapa de Inicio de Sesión del Usuario asociada hará que el flujo de la fuente no reanude el flujo original desde el que se inició, y en su lugar autenticará directamente al usuario pendiente.
+
+
+
+# Etapas
+
+Las **etapas** son uno de los bloques de construcción fundamentales en Authentik, junto con los flujos y las políticas.
+
+Una etapa representa un único paso de verificación o lógica dentro de un flujo. Puedes vincular una o más etapas a un flujo para crear un proceso de inicio de sesión y autenticación personalizado y flexible.
+
+En el siguiente diagrama del **flujo de autenticación predeterminado**, puedes ver múltiples etapas o pasos en el proceso de autenticación para un usuario. Las políticas están vinculadas a algunas etapas; esto permite la aplicación dinámica de una etapa específica si se cumplen los criterios de la política.
+
+![Descripción de la imagen](doc/images/image2.png)
