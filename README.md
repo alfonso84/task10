@@ -53,3 +53,40 @@ Para **Firezone**, los requisitos del sistema son relativamente modestos y suele
 - **Red**: Conexión a Internet para la instalación de dependencias y actualizaciones.
 
 Estos requisitos pueden variar dependiendo del tamaño de la implementación y del número de usuarios. Es recomendable consultar la documentación oficial de cada herramienta para obtener los requisitos más actualizados y específicos.
+
+
+# Dependencias Técnicas
+
+## Autentik
+
+Para **Authentik**, las principales dependencias técnicas son:
+
+- **Docker**: Autentik se ejecuta en contenedores Docker. Asegúrate de tener Docker instalado en tu sistema.
+- **Docker Compose**: Se utiliza para definir y ejecutar aplicaciones multi-contenedor. Autentik suele requerir Docker Compose para gestionar sus servicios.
+- **Base de Datos**: Autentik puede usar PostgreSQL o MySQL como su sistema de gestión de bases de datos. Debes tener una instancia de base de datos configurada y accesible.
+- **Sistema Operativo**: Requiere un sistema operativo compatible con Docker, como Ubuntu, Debian, o CentOS.
+
+## Firezone
+
+Para **Firezone**, las principales dependencias técnicas son:
+
+- **Docker**: Firezone se ejecuta en contenedores Docker. Asegúrate de tener Docker instalado en tu sistema.
+- **Docker Compose**: Se utiliza para gestionar los servicios de Firezone. Docker Compose facilita la configuración y el despliegue de Firezone y sus componentes.
+- **Sistema Operativo**: Requiere un sistema operativo compatible con Docker, como Ubuntu o Debian.
+
+Estas herramientas de contenedorización y orquestación son esenciales para el despliegue y funcionamiento de Authentik y Firezone, simplificando la administración y escalabilidad de ambos sistemas.
+
+
+
+# Etapa de Fuente
+
+La etapa de **Fuente** inyecta una fuente OAuth o SAML en la ejecución del flujo. Esto permite una verificación adicional del usuario, o acceder dinámicamente a diferentes fuentes para diferentes identificadores de usuario (nombre de usuario, dirección de correo electrónico, etc.).
+
+![Descripción de la imagen](doc/images/image1.png)
+
+
+## Consideraciones
+
+Es muy importante que los flujos de autenticación y registro de la fuente configurada (cuando están establecidos; pueden dejarse sin seleccionar para evitar la autenticación o el registro con la fuente) **no tengan una etapa de Inicio de Sesión del Usuario asociada**.
+
+Esto se debe a que la etapa de Fuente funciona añadiendo una etapa dinámica en memoria al flujo de la fuente. Por lo tanto, tener una etapa de Inicio de Sesión del Usuario asociada hará que el flujo de la fuente no reanude el flujo original desde el que se inició, y en su lugar autenticará directamente al usuario pendiente.
