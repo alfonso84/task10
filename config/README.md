@@ -24,7 +24,7 @@ Configura la conexión de la aplicación siguiendo las instrucciones en la secci
 
 ## Consideraciones Adicionales
 
-- **Versión de Cloud:** Estamos utilizando la versión de Cloud para simplificar el ejercicio y centrarnos exclusivamente en Authentik, que gestionará todos los usuarios, roles y políticas.
+- **Versión de Cloud:** Estamos utilizando la versión de Cloud para simplificar el ejercicio y centrarnos exclusivamente en Authentik, que gestionará todos los usuarios, roles y grupos.
   
 - **API de Firezone:** La versión de Firezone Cloud actualmente tiene su API en fase de beta cerrada (closed beta). Por lo tanto, el paso de configuración es manual por el momento.
 
