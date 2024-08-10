@@ -22,6 +22,11 @@ Realiza la configuración del gateway correspondiente siguiendo la guía en la s
 
 Configura la conexión de la aplicación siguiendo las instrucciones en la sección [Configuración](CONFIG.md). Aunque esta tarea se puede realizar mediante un script, hacerlo a través de la interfaz de usuario (UI) suele ser más rápido y sencillo.
 
+
+## 6. Ejecucion de Scripts
+
+Ubicado en la carpeta script/ se sugiere leer el [README ](../script/README.md) del la carpeta 
+
 ## Consideraciones Adicionales
 
 - **Versión de Cloud:** Estamos utilizando la versión de Cloud para simplificar el ejercicio y centrarnos exclusivamente en Authentik, que gestionará todos los usuarios, roles y grupos.
