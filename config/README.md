@@ -4,15 +4,15 @@ Para configurar correctamente tu entorno, sigue estos pasos en el orden indicado
 
 ## 1. Leer el README Principal
 
-Antes de comenzar, asegúrate de leer el [README Principal](README.md) para obtener una visión general y los requisitos básicos del proyecto.
+Antes de comenzar, asegúrate de leer el [README Principal](../README.md) para obtener una visión general y los requisitos básicos del proyecto.
 
 ## 2. Entender la Arquitectura
 
-Consulta la sección [Arquitectura](ARCHITECTURE.md) para comprender la estructura y los componentes de la solución.
+Consulta la sección [Arquitectura](../architecture/README.md) para comprender la estructura y los componentes de la solución.
 
 ## 3. Instalar las Aplicaciones
 
-Sigue las instrucciones en la sección [Instalación](INSTALL.md) para instalar las aplicaciones de Firezone y Authentik.
+Sigue las instrucciones en la sección [InstalaciónAuthentik](../install/authentik/README.md) y [InstalaciónFirezone](../install/firezone/README.md)para instalar las aplicaciones de Firezone y Authentik.
 
 ## 4. Configurar el Gateway
 
